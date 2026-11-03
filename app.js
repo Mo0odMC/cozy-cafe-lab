@@ -15,3 +15,8 @@ const qotd = document.querySelector('#quote-of-the-day')
 qotd.textContent = "It's not always the tear that measures the pain. Sometimes it's the SMILE we fake"
 qotd.classList.add('featured')
 
+//part 3
+const mainphoto = document.querySelector('#main-photo') 
+console.log(mainphoto.getAttribute('src'))
+mainphoto.setAttribute('src', './assets/berry-cake.jpg')
+mainphoto.setAttribute('alt', 'A berry cake served at the cafe')
