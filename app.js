@@ -20,3 +20,13 @@ const mainphoto = document.querySelector('#main-photo')
 console.log(mainphoto.getAttribute('src'))
 mainphoto.setAttribute('src', './assets/berry-cake.jpg')
 mainphoto.setAttribute('alt', 'A berry cake served at the cafe')
+
+//part 4
+const bgbtn = document.querySelector('#bg-color-btn')
+const body = document.querySelector('body')
+
+function handleBackgroundChange() {
+    body.style.backgroundColor = 'lightsteelblue'
+}
+
+bgbtn.addEventListener('click',(handleBackgroundChange))
