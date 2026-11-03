@@ -24,9 +24,12 @@ mainphoto.setAttribute('alt', 'A berry cake served at the cafe')
 //part 4
 const bgbtn = document.querySelector('#bg-color-btn')
 const body = document.querySelector('body')
-
+//this is extra on the assignment (linking arrays to a button)
+const color = ['lightsteelblue','bisque','lavender','darkgray']
+let colorIndex = 0
 function handleBackgroundChange() {
-    body.style.backgroundColor = 'lightsteelblue'
+    body.style.backgroundColor = color[colorIndex]
+    colorIndex = (colorIndex + 1) % color.length
 }
 
 bgbtn.addEventListener('click',(handleBackgroundChange))
